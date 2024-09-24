@@ -10,7 +10,7 @@ function Header() {
             {isMainPage && (
                 <div>
                     <ul className={"nav"}>
-                        <li>Про Нас</li>
+                        <li><Link to="/aboutus">Про Нас</Link></li>
                         <li>Наши Услуги</li>
                         <li><Link to="/portfolio">Портфолио</Link></li>
                         <li><Link to="/contact">Контакты</Link></li>
@@ -19,7 +19,7 @@ function Header() {
             )}
             {!isMainPage && (
                 <ul className={"nav"}>
-                    <li>Про Нас</li>
+                    <li><Link to="/aboutus">Про Нас</Link></li>
                     <li>Наши Услуги</li>
                     <li><Link to="/portfolio">Портфолио</Link></li>
                     <li><Link to="/contact">Контакты</Link></li>
