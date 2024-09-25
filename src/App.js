@@ -7,6 +7,7 @@ import Header from "./Components/Header";
 import Portfolio from "./Components/Portfolio";
 import Contact from "./Components/Contact";
 import './index.css';
+import AboutUs from "./Components/AboutUs";
 
 class App extends React.Component {
 
@@ -17,6 +18,7 @@ class App extends React.Component {
                     <Header />
                     <Routes>
                         <Route path="/" element={<MainPage/>} />
+                        <Route path="/aboutus" element={<AboutUs />} />
                         <Route path="/portfolio" element={<Portfolio />} />
                         <Route path="/contact" element={<Contact />} />
                     </Routes>
