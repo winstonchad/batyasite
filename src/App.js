@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import MainPage from "./MainPage";
-import Footer from './Footer.jsx';
-import Header from "./Header";
-import Portfolio from "./Portfolio";
-import Contact from "./Contact";
+import MainPage from "./Components/MainPage";
+import Footer from './Components/Footer.jsx';
+import Header from "./Components/Header";
+import Portfolio from "./Components/Portfolio";
+import Contact from "./Components/Contact";
 import './index.css';
 
 class App extends React.Component {

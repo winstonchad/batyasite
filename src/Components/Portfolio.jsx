@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
-import project1 from './assets/projectpics/project1.jpg';
-import project2 from './assets/projectpics/project2.jpg';
-import project3 from './assets/projectpics/project3.jpeg';
-import project4 from './assets/projectpics/project4.jpg';
-import project5 from './assets/projectpics/project5.jpg';
-import project6 from './assets/projectpics/project6.jpeg';
+import project1 from '../assets/projectpics/project1.jpg';
+import project2 from '../assets/projectpics/project2.jpg';
+import project3 from '../assets/projectpics/project3.jpeg';
+import project4 from '../assets/projectpics/project4.jpg';
+import project5 from '../assets/projectpics/project5.jpg';
+import project6 from '../assets/projectpics/project6.jpeg';
 
 const Portfolio = () => {
     const [projects] = useState([
