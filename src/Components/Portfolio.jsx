@@ -52,6 +52,8 @@ const Portfolio = () => {
         },
     ]);
 
+    const [selectedProject, setSelectedProject] = useState(null);
+
     useEffect(() => {
         document.body.classList.add('portfolio-page');
         return () => {
@@ -59,18 +61,36 @@ const Portfolio = () => {
         };
     }, []);
 
+    const openModal = (project) => {
+        setSelectedProject(project);
+    }
+
+    const closeModal = () => {
+        setSelectedProject(null);
+    }
+
     return (
         <div>
-            <h2>Portfolio</h2>
             <div className={"portfolio"}>
                 {projects.map((project) => (
-                    <div key={project.id} className={"project"}>
+                    <div key={project.id} className={"project"} onClick={() => openModal(project)}>
                         <img src={project.image} alt={project.name} />
                         <h3>{project.name}</h3>
                         <p>{project.description}</p>
                     </div>
                 ))}
             </div>
+
+            {selectedProject && (
+                <div className={"modal"} onClick={closeModal}>
+                    <div className={"modal-content"} onClick={(e) => e.stopPropagation()}>
+                        <span className={"modal-close"} onClick={closeModal}>&times;</span>
+                        <h2>{selectedProject.name}</h2>
+                        <img src={selectedProject.image} alt={selectedProject.name} />
+                        <p>{selectedProject.description}</p>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

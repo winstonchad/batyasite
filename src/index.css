@@ -196,6 +196,111 @@ footer {
     object-fit: cover; /* Обрезка изображения, если нужно */
 }
 
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 5%;
+}
+@media (max-width: 1024px) {
+    .portfolio {
+        margin-top: 4%; /* Отступ для устройств с шириной экрана до 1024px */
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio {
+        margin-top: 3%; /* Отступ для устройств с шириной экрана до 768px */
+    }
+
+    .project{
+        flex: 1 1 calc(100% - 40px); /* Карточки будут занимать 100% ширины минус отступы */
+        margin: 0 10%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio {
+        margin-top: 2%; /* Отступ для устройств с шириной экрана до 480px */
+    }
+}
+
+.project {
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .project img {
+        height: 250px; /* Высота для устройств с шириной экрана до 1024px */
+    }
+}
+
+@media (max-width: 768px) {
+    .project img {
+        height: 220px; /* Высота для устройств с шириной экрана до 768px */
+    }
+}
+
+@media (max-width: 480px) {
+    .project img {
+        height: 200px; /* Высота для устройств с шириной экрана до 480px */
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 100%;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .wrapper {
@@ -268,6 +373,7 @@ footer {
     width: 100%;
     padding: 10px 0;
 }
+
 
 @media (max-width: 768px) {
     .menu-icon {

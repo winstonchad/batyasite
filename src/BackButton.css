@@ -1,0 +1,79 @@
+.back-to-main{
+    position: fixed;
+    top: 100px;
+    width: 50px;
+    height: 50px;
+    background-color: #aeabab;
+    color: #fff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.portfolio-page .back-to-main{
+    left: 60px;
+    top: 125px;
+}
+.back-to-main img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.back-to-main:hover{
+    background-color: #555;
+}
+
+@media (max-width: 1024px) {
+    .portfolio-page .back-to-main{
+        top: 40px;
+        left: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-page .back-to-main{
+        top: 15px;
+        left: 20px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .portfolio-page .back-to-main{
+        top: 15px;
+        left: 10px;
+    }
+
+}
+
+.contact-page .back-to-main{
+    left: 150px;
+    top: 125px;
+}
+
+@media (max-width: 1024px) {
+    .contact-page .back-to-main{
+        top: 135px;
+        left: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-page .back-to-main {
+        top: 135px;
+        left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-page .back-to-main {
+        top: 135px;
+        left: 10px;
+    }
+}

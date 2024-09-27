@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from "react-router-dom";
-import BackButton from "./BackButton";
+import BackButton from './BackButton.jsx';
+import '../BackButton.css';
 
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -20,6 +21,7 @@ function Header() {
                 <li><Link to="/portfolio">Портфолио</Link></li>
                 <li><Link to="/contact">Контакты</Link></li>
             </ul>
+            <BackButton />
         </header>
     );
 }

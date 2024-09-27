@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Link, useLocation} from "react-router-dom";
-import HeaderStyle from '../HeaderStyle.css';
-import arrow from '../assets/arrow.svg';
+import '../BackButton.css';
+import ArrowIcon from "./ArrowIcon";
 
 function BackButton(){
     const location = useLocation();
@@ -17,7 +17,7 @@ function BackButton(){
 
     return(
         <Link to={"/"} className={"back-to-main"} onClick={handleClick}>
-            <img src={arrow} alt={"Back to main page"} />
+            <ArrowIcon />
         </Link>
     )
 }
