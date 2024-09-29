@@ -23,16 +23,15 @@ function App() {
                 <div className={menuOpen ? 'menu-open' : 'menu-closed'}>
                 <Header />
                 <Routes>
-                    <Route path="/" element={<MainPage/>} />
+                    <Route path="/" element={<MainPage/>}/>
                     <Route path="/services" element={<Services/>}/>
-                    <Route path="/aboutus" element={<AboutUs />} />
-                    <Route path="/portfolio" element={<Portfolio />} />
-                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/aboutus" element={<AboutUs/>}/>
+                    <Route path="/portfolio" element={<Portfolio/>}/>
+                    <Route path="/contact" element={<Contact />}/>
                 </Routes>
                 <Footer />
             </div>
             </div>
-
         </Router>
     );
 }

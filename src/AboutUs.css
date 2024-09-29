@@ -3,7 +3,7 @@
 .about-us-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /*gap: 0%;*/
+    gap: 0%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 3%;
@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2%;
-    align-items: start;
+    align-items: stretch;
 }
 
 .text-block {
@@ -23,11 +23,13 @@
     width: 200%;
     max-width: 700px;
     margin-top: 10%;
+    height: auto;
 }
 
 .text-block h2 {
     font-size: 2.5rem;
     margin-bottom: 2.5%;
+    height: auto;
 }
 
 .text-block p {
@@ -52,10 +54,14 @@
     text-decoration: underline;
 }
 
+.image-block{
+    display: flex;
+    align-items: stretch;
+}
 .image-block img {
     width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
     margin-left: 153%;
 }
 
