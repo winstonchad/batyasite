@@ -1,28 +1,26 @@
 /* AboutUs.css */
 
 .about-us-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0%;
+    display: flex;
+    flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
     padding: 3%;
 }
 
 .about-us-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2%;
+    display: flex;
+    flex-direction: row;
     align-items: stretch;
+    gap: 2%;
 }
 
 .text-block {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    width: 200%;
+    justify-content: center;
     max-width: 700px;
-    margin-top: 10%;
+    /*margin-top: 10%;*/
     height: auto;
 }
 
@@ -39,12 +37,13 @@
 }
 
 .contact-link {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #333;
     text-decoration: none;
     /*background-color: #8a8a9c;*/
     padding: 5px 10px;
     border-radius: 10px;
+    margin-left: -1.4%;
     display: inline-block;
     width: auto;
     box-sizing: border-box;
@@ -54,26 +53,31 @@
     text-decoration: underline;
 }
 
-.image-block{
+.image-block {
     display: flex;
-    align-items: stretch;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+    overflow: hidden;
 }
+
 .image-block img {
     width: 100%;
     height: auto;
     object-fit: cover;
-    margin-left: 153%;
+    object-position: center 20%;
 }
 
 .quote-block {
-    grid-column: span 2;
-    background-color: #f6e0d5;
+    background-color: #3a3838;
+    color: white;
     padding: 20px;
     text-align: left;
+    margin-top: 3%;
 }
 
 .quote-block p {
     font-size: 1.2rem;
-    line-height: 1.8;
+    line-height: 1.9;
     margin: 0;
 }

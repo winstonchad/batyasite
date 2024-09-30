@@ -1,6 +1,6 @@
 import React from 'react';
 import '../AboutUs.css';
-import papaFoto1 from '../assets/papaFoto1.jpg';
+import papaFoto1 from '../assets/papaFoto4.png';
 
 const AboutUs = () => {
     return (
@@ -22,7 +22,7 @@ const AboutUs = () => {
                 </div>
             </div>
             <div className="quote-block">
-                <p>Based in west London, K&H Design was founded in 2015. Now with a multi-talented team of ten, the studio works closely with private clients to create intelligent interiors.</p>
+                <p>Наша студия дизайна интерьеров была основана Дидаром Абишевым в 2012 году. За эти годы мы воплотили в жизнь более сотни проектов, помогая клиентам обретать уникальные, продуманные до мелочей пространства. </p>
             </div>
         </div>
     );
