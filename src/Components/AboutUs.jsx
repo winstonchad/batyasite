@@ -1,8 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../AboutUs.css';
 import papaFoto1 from '../assets/papaFoto4.png';
 
 const AboutUs = () => {
+    useEffect(() => {
+        document.body.classList.add('about-us-page');
+        return () => {
+            document.body.classList.remove('about-us-page');
+        };
+    }, []);
+
     return (
         <div className="about-us-container">
             <div className="about-us-content">

@@ -11,7 +11,7 @@
 .about-us-content {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    /*align-items: stretch;*/
     gap: 2%;
 }
 
@@ -80,4 +80,43 @@
     font-size: 1.2rem;
     line-height: 1.9;
     margin: 0;
+}
+
+/* Media Queries for Tablets */
+@media (max-width: 1024px) {
+    .about-us-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-block {
+        max-width: 100%;
+    }
+
+    .image-block {
+        height: auto;
+    }
+
+    .image-block img {
+        object-position: center;
+    }
+}
+
+/* Media Queries for Phones */
+@media (max-width: 768px) {
+    .about-us-container {
+        padding: 5%;
+    }
+
+    .text-block h2 {
+        font-size: 2rem;
+    }
+
+    .text-block p {
+        font-size: 1rem;
+    }
+
+    .quote-block p {
+        font-size: 1rem;
+    }
 }

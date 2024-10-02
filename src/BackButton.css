@@ -29,6 +29,11 @@
     background-color: #555;
 }
 
+.about-us-page .back-to-main{
+    left: 110px;
+    top: 125px;
+}
+
 @media (max-width: 1024px) {
     .portfolio-page .back-to-main{
         top: 40px;
@@ -71,9 +76,23 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
     .contact-page .back-to-main {
-        top: 135px;
+        top: 15px;
+        left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-us-page .back-to-main {
+        top: 15px;
+        left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us-page .back-to-main {
+        top: 15px;
         left: 10px;
     }
 }

@@ -1,0 +1,36 @@
+.services-page {
+    padding: 20px;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+}
+
+.service-item {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.service-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #aeabab;
+    cursor: pointer;
+}
+
+.service-details {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.service-details img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}

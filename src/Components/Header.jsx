@@ -16,8 +16,8 @@ function Header() {
                 &#9776;
             </div>
             <ul className={`nav ${menuOpen ? 'open' : ''}`}>
-                <li><Link to="/aboutus">Про Нас</Link></li>
-                <li>Наши Услуги</li>
+                <li><Link to="/aboutus">О Нас</Link></li>
+                <li><Link to={"/services"}>Наши Услуги</Link></li>
                 <li><Link to="/portfolio">Портфолио</Link></li>
                 <li><Link to="/contact">Контакты</Link></li>
             </ul>
