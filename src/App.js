@@ -9,6 +9,9 @@ import Contact from "./Components/Contact";
 import './index.css';
 import AboutUs from "./Components/AboutUs";
 import Services from "./Components/Services";
+import TelegramIcon from "./Components/TelegramIcon";
+import InstagramIcon from "./Components/InstagramIcon";
+import WhatsappIcon from "./Components/WhatsappIcon";
 
 function App() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -21,16 +24,21 @@ function App() {
         <Router>
             <div className={"wrapper"}>
                 <div className={menuOpen ? 'menu-open' : 'menu-closed'}>
-                <Header />
-                <Routes>
-                    <Route path="/" element={<MainPage/>}/>
-                    <Route path="/services" element={<Services/>}/>
-                    <Route path="/aboutus" element={<AboutUs/>}/>
-                    <Route path="/portfolio" element={<Portfolio/>}/>
-                    <Route path="/contact" element={<Contact />}/>
-                </Routes>
-                <Footer />
-            </div>
+                    <Header/>
+                    <Routes>
+                        <Route path="/" element={<MainPage/>}/>
+                        <Route path="/services" element={<Services/>}/>
+                        <Route path="/aboutus" element={<AboutUs/>}/>
+                        <Route path="/portfolio" element={<Portfolio/>}/>
+                        <Route path="/contact" element={<Contact/>}/>
+                    </Routes>
+                    <Footer/>
+                </div>
+                <div className="social-icons-container">
+                    <TelegramIcon/>
+                    <InstagramIcon/>
+                    <WhatsappIcon/>
+                </div>
             </div>
         </Router>
     );
@@ -39,6 +47,5 @@ function App() {
 export default App;
 
 //TODO: добавить анимации переходов между страницами
-// TODO: доделать дизайн для страницы О нас, доделать кнопку "Contact us" и фотку отредактировать
 // TODO: доделать дизайн для страницы Услуги
 

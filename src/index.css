@@ -48,6 +48,21 @@ header ul.nav li:hover {
     opacity: 0.3;
 }
 
+.social-icons-container {
+    position: fixed;
+    top: 15%; /* Adjust as needed */
+    right: 1%; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between icons */
+}
+
+.social-icons-container svg {
+    width: 32px; /* Adjust size as needed */
+    height: 32px; /* Adjust size as needed */
+    cursor: pointer;
+}
+
 .presentation {
     margin: 50px 0;
     background: url('./assets/cover.jpg') no-repeat center center;

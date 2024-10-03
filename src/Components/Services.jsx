@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import './Services.css';
+import ArrowIconOpen from "./ArrowIconOpen";
 
 const services = [
     { id: 1, title: 'Консультации по дизайну интерьера', description: 'Мы предлагаем индивидуальные консультации для разработки вашего уникального интерьера. Наши дизайнеры помогут вам определить стиль, цветовые решения и материалы, которые лучше всего подходят для вашего проекта.<br />' +
@@ -20,6 +21,14 @@ const services = [
 ];
 
 function Services() {
+
+    useEffect(() => {
+        document.body.classList.add('services-page');
+        return () => {
+            document.body.classList.remove('services-page');
+        };
+    }, []);
+
     const [openServiceId, setOpenServiceId] = useState(null);
 
     const toggleService = (id) => {
@@ -34,11 +43,11 @@ function Services() {
                     <li key={service.id} className="service-item">
                         <div className="service-header" onClick={() => toggleService(service.id)}>
                             <h2>{service.title}</h2>
-                            <button>{openServiceId === service.id ? 'Закрыть' : 'Подробнее'}</button>
+                            <ArrowIconOpen />
                         </div>
                         {openServiceId === service.id && (
                             <div className="service-details">
-                                <p dangerouslySetInnerHTML={{__html: service.description}}></p>
+                                <p dangerouslySetInnerHTML={{ __html: service.description }}></p>
                                 <img src={service.image} alt={service.title} />
                             </div>
                         )}

@@ -34,6 +34,16 @@
     top: 125px;
 }
 
+.services-page .back-to-main{
+    left: 75px;
+    top: 125px;
+}
+
+.contact-page .back-to-main{
+    left: 150px;
+    top: 125px;
+}
+
 @media (max-width: 1024px) {
     .portfolio-page .back-to-main{
         top: 40px;
@@ -57,11 +67,6 @@
 
 }
 
-.contact-page .back-to-main{
-    left: 150px;
-    top: 125px;
-}
-
 @media (max-width: 1024px) {
     .contact-page .back-to-main{
         top: 135px;
@@ -76,10 +81,17 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 480px) {
     .contact-page .back-to-main {
         top: 15px;
         left: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-us-page .back-to-main {
+        top: 40px;
+        left: 20px;
     }
 }
 
@@ -94,5 +106,26 @@
     .about-us-page .back-to-main {
         top: 15px;
         left: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .services-page .back-to-main {
+        top: 40px;
+        left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-page .back-to-main {
+        top: 15px;
+        left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-page .back-to-main {
+        top: 30px;
+        left: 20px;
     }
 }
