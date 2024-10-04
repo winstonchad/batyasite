@@ -1,5 +1,30 @@
-/*.arrow-icon {*/
-/*    width: 24%; !* Adjust the width as needed *!*/
-/*    height: 24%; !* Adjust the height as needed *!*/
-/*    cursor: pointer;*/
-/*}*/
+.arrow-icon {
+    width: 24%; /* Adjust the width as needed */
+    height: 24%; /* Adjust the height as needed */
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .arrow-icon {
+        width: 22px; /* Adjust the width as needed */
+        height: 22px; /* Adjust the height as needed */
+    }
+}
+
+@media (max-width: 768px) {
+    .arrow-icon {
+        width: 20px; /* Adjust the width as needed */
+        height: 20px; /* Adjust the height as needed */
+    }
+}
+
+@media (max-width: 480px) {
+    .arrow-icon {
+        width: 16px; /* Adjust the width as needed */
+        height: 16px; /* Adjust the height as needed */
+    }
+}
+
+.arrow-icon:hover {
+    transform: scale(1.1);
+}
